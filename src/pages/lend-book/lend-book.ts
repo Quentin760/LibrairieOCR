@@ -28,10 +28,7 @@ export class LendBookPage implements OnInit{
     this.viewCtrl.dismiss();
   }
 
-  onToggleBook() {
-    this.book.isLend = !this.book.isLend;
-  }
   onLend() { 
-    this.service.onToggleMedia();
+    this.service.onToggleMedia(this.book);
   }
 }

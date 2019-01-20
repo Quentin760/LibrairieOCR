@@ -41,8 +41,8 @@ export class Service {
         
     ];
 
-    onToggleMedia() {
-        this.book.isLend = !this.book.isLend;
-        this.cd.isLend = !this.cd.isLend;
+    onToggleMedia(item: any) {
+        let CDOrBook = item;
+		CDOrBook.isLend = !CDOrBook.isLend;
     }
 }

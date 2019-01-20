@@ -30,13 +30,10 @@ export class LendCdPage implements OnInit {
     this.viewCtrl.dismiss();
   }
 
-  onToggleCd() {
-    this.cd.isLend = !this.cd.isLend;
-  }  
 
   onLend() { 
-    console.log("hello")
-    this.service.onToggleMedia();
+    
+    this.service.onToggleMedia(this.cd);
   }
 
 }

@@ -14,10 +14,10 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <button ion-button full color="danger" [disabled] ="!cd.isLend" (click)="onToggleCd()">Rendre</button>
+            <button ion-button full color="danger" [disabled] ="!cd.isLend" (click)="onLend()">Rendre</button>
           </ion-col>
           <ion-col>
-              <button ion-button full color="secondary" [disabled] ="cd.isLend" (click)="onToggleCd()">Prêter</button>
+              <button ion-button full color="secondary" [disabled] ="cd.isLend" (click)="onLend()">Prêter</button>
           </ion-col>
         </ion-row>
       </ion-grid>
